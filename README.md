@@ -1,25 +1,26 @@
 # monaco-json-studio-single
 
-Dedicated 1-pane static Monaco JSON Studio generator (`v2`) directly composing [`monaco-json-studio-base-header`](https://www.npmjs.com/package/monaco-json-studio-base-header), [`monaco-json-studio-base-body`](https://www.npmjs.com/package/monaco-json-studio-base-body), and [`monaco-json-studio-base-footer`](https://www.npmjs.com/package/monaco-json-studio-base-footer).
+1-pane static Monaco JSON Studio generator composing base-header, base-body, and base-footer.
 
 - **npm**: [https://www.npmjs.com/package/monaco-json-studio-single](https://www.npmjs.com/package/monaco-json-studio-single)
-- **Suite Story & Docs**: [https://keshavsoft.github.io/monaco-json-studio-docs/single.html](https://keshavsoft.github.io/monaco-json-studio-docs/single.html)
-- **Repo Docs**: [./docs/index.html](./docs/index.html) | [https://keshavsoft.github.io/monaco-json-studio-single/](https://keshavsoft.github.io/monaco-json-studio-single/)
+- **GitHub**: [https://github.com/keshavsoft/monaco-json-studio-single](https://github.com/keshavsoft/monaco-json-studio-single)
+- **Docs**: [https://keshavsoft.github.io/monaco-json-studio-single/](https://keshavsoft.github.io/monaco-json-studio-single/) ([Story](./docs/story.html) · [npx](./docs/npx-usage.html) · [npm](./docs/npm-usage.html) · [Dependencies](./docs/dependencies.html))
+- **Suite**: [Studio Docs](https://keshavsoft.github.io/monaco-json-studio-docs/single.html)
 
-## Why It Exists
-
-In a 1-pane editor, stacking a separate pane header below the studio bar wastes vertical space. `monaco-json-studio-single` places `Select File` or dataset selection directly in the top studio header and keeps the editor full-height, with non-overwriting output folders (`-1`, `-2`, …).
-
-## CLI Usage
+## CLI (`npx`)
 
 ```bash
 npx monaco-json-studio-single
 npx monaco-json-studio-single file-picker cursor
-npx monaco-json-studio-single select note
-npx monaco-json-studio-single title none
+npx monaco-json-studio-single select stats
+npx monaco-json-studio-single actions status
 ```
 
-## Programmatic Usage
+## Programmatic (`npm`)
+
+```bash
+npm install monaco-json-studio-single
+```
 
 ```js
 import { createSingleStudio } from 'monaco-json-studio-single';
