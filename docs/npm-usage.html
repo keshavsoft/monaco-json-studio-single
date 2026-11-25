@@ -33,8 +33,12 @@
       <pre><code>npm install monaco-json-studio-single</code></pre>
       <pre><code>import { createSingleStudio } from 'monaco-json-studio-single';
 
-createSingleStudio({ header: 'file-picker', footer: 'cursor' });</code></pre>
-      <p>Exports createSingleStudio({ header, footer, outputDir }) as both named and default export, plus HEADER_TYPES and FOOTER_TYPES.</p>
+createSingleStudio({
+  header: 'file-picker',
+  footer: 'cursor',
+  url: 'https://keshavsoft.github.io/declarative-definitions/json/v2/definitions.json'
+});</code></pre>
+      <p>Exports <code>createSingleStudio({ header, footer, url, outputDir })</code> as both named and default export, plus <code>HEADER_TYPES</code> and <code>FOOTER_TYPES</code>.</p>
     </section>
   </main>
 

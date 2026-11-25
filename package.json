@@ -1,6 +1,6 @@
 {
   "name": "monaco-json-studio-single",
-  "version": "1.2.1",
+  "version": "1.4.1",
   "description": "Single-pane Monaco JSON Studio built on monaco-json-studio-base.",
   "publishConfig": {
     "access": "public"
@@ -25,7 +25,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --check src/index.js && node --check src/v1/index.js && node --check src/v2/index.js && node --check bin/index.js"
+    "test": "node --check src/index.js && node --check src/v1/index.js && node --check src/v2/index.js && node --check src/v3/index.js && node --check src/v4/index.js && node --check bin/index.js"
   },
   "dependencies": {
     "handlebars": "^4.7.10",

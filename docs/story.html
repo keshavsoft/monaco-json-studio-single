@@ -31,7 +31,8 @@
     <section>
       <h2>Design Story</h2>
       <p>In a 1-pane editor, stacking a separate pane header below the studio bar wastes vertical space.</p>
-      <p>monaco-json-studio-single (v2) directly composes monaco-json-studio-base-header, monaco-json-studio-base-body (single), and monaco-json-studio-base-footer through document.hbs into a clean, non-overwriting static studio folder.</p>
+      <p><code>monaco-json-studio-single</code> (<code>v4</code>) directly composes <code>monaco-json-studio-base-header</code>, <code>monaco-json-studio-base-body</code> (<code>v3</code>), and <code>monaco-json-studio-base-footer</code> through <code>document.hbs</code>, splitting Monaco into dedicated <code>js/monaco/</code> modules (<code>loader</code>, <code>source</code>, <code>mount</code>, <code>value</code>, <code>events</code>).</p>
+      <p>The top-right source pill clearly identifies where the displayed JSON originated: <strong>LOCAL DATA</strong> (amber), <strong>SAME SERVER</strong> (cyan), <strong>REMOTE URL</strong> (indigo), <strong>LOCAL FILE</strong> (green), or <strong>LOAD FAILED</strong> (red).</p>
     </section>
   </main>
 
