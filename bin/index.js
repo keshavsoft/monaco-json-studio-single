@@ -5,7 +5,7 @@ const args = process.argv.slice(2);
 
 if (args.includes('--help') || args.includes('-h')) {
     console.log(`
-Monaco JSON Studio · Single (v4)
+Monaco JSON Studio · Single (v5)
 
 Usage:
   npx monaco-json-studio-single [header] [footer] [--url <endpoint>]
@@ -30,7 +30,7 @@ const [header = 'file-picker', footer = 'cursor'] = positional;
 
 try {
     const targetDir = createSingleStudio({ header, footer, url });
-    console.log(`Generated Single Studio v4 (${header} / ${footer}${url ? ` / url=${url}` : ''}).`);
+    console.log(`Generated Single Studio v5 (${header} / ${footer}${url ? ` / url=${url}` : ''}).`);
     console.log(`Open: ${targetDir}/index.html`);
 } catch (error) {
     console.error(`Could not generate Single Studio: ${error.message}`);

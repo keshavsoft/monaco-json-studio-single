@@ -10,7 +10,7 @@
   <header class="site-header">
     <a class="brand" href="./index.html">
       <span>monaco-json-studio-single</span>
-      <span class="badge">Studio · Single</span>
+      <span class="badge">Studio · Single (v5)</span>
     </a>
     <nav class="nav">
       <a href="./index.html">Overview</a>
@@ -32,10 +32,8 @@
       <h2>Commands</h2>
       <pre><code>npx monaco-json-studio-single
 npx monaco-json-studio-single file-picker cursor
-npx monaco-json-studio-single file-picker cursor --url https://keshavsoft.github.io/declarative-definitions/json/v2/definitions.json
-npx monaco-json-studio-single select stats
-npx monaco-json-studio-single actions status</code></pre>
-      <p>Generates <code>./monaco-single-&lt;header&gt;-&lt;footer&gt;</code> (appending <code>-1</code>, <code>-2</code>, ... if the directory already exists). Passing <code>--url</code> configures the initial JSON endpoint; you can also override it dynamically in the browser with <code>?url=&lt;endpoint&gt;</code>.</p>
+npx monaco-json-studio-single file-picker cursor --url https://keshavsoft.github.io/declarative-spec/json/v3/spec.json</code></pre>
+      <p>Generates ./monaco-single-&lt;header&gt;-&lt;footer&gt; (appending -1, -2, ... if it exists). Passing --url sets the initial JSON endpoint; ?url=... overrides it in the browser.</p>
     </section>
   </main>
 

@@ -10,7 +10,7 @@
   <header class="site-header">
     <a class="brand" href="./index.html">
       <span>monaco-json-studio-single</span>
-      <span class="badge">Studio · Single</span>
+      <span class="badge">Studio · Single (v5)</span>
     </a>
     <nav class="nav">
       <a href="./index.html">Overview</a>
@@ -26,13 +26,12 @@
     
     <div class="hero">
       <h1>Why monaco-json-studio-single Exists</h1>
-      <p>1-pane static Monaco JSON Studio generator composing base-header, base-body, and base-footer.</p>
+      <p>1-pane Monaco JSON Studio (v5) with --url loading, visual source badges, Render button, and BroadcastChannel sync.</p>
     </div>
     <section>
       <h2>Design Story</h2>
-      <p>In a 1-pane editor, stacking a separate pane header below the studio bar wastes vertical space.</p>
-      <p><code>monaco-json-studio-single</code> (<code>v4</code>) directly composes <code>monaco-json-studio-base-header</code>, <code>monaco-json-studio-base-body</code> (<code>v3</code>), and <code>monaco-json-studio-base-footer</code> through <code>document.hbs</code>, splitting Monaco into dedicated <code>js/monaco/</code> modules (<code>loader</code>, <code>source</code>, <code>mount</code>, <code>value</code>, <code>events</code>).</p>
-      <p>The top-right source pill clearly identifies where the displayed JSON originated: <strong>LOCAL DATA</strong> (amber), <strong>SAME SERVER</strong> (cyan), <strong>REMOTE URL</strong> (indigo), <strong>LOCAL FILE</strong> (green), or <strong>LOAD FAILED</strong> (red).</p>
+      <p>In a 1-pane editor, stacking a separate pane header below the studio bar wastes vertical space—and just showing JSON without rendering DOM leaves half the workflow unfinished.</p>
+      <p>In v5, monaco-json-studio-single composes base-header (v2), base-body (v3), and base-footer (v1), displays live source badges (LOCAL DATA, SAME SERVER, REMOTE URL, LOCAL FILE, LOAD FAILED), and adds a Render button that broadcasts JSON via BroadcastChannel and localStorage to monaco-json-studio-preview.</p>
     </section>
   </main>
 
