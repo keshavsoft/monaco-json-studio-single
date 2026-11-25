@@ -2,9 +2,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import Handlebars from 'handlebars';
-import { HEADER_TYPES, renderHeader, assetsDir as headerAssetsDir } from '../../../monaco-json-studio-base-header/src/index.js';
-import { normalizeBodyConfig, renderBody, assetsDir as bodyAssetsDir } from '../../../monaco-json-studio-base-body/src/index.js';
-import { FOOTER_TYPES, renderFooter, assetsDir as footerAssetsDir } from '../../../monaco-json-studio-base-footer/src/index.js';
+import { HEADER_TYPES, renderHeader, assetsDir as headerAssetsDir } from 'monaco-json-studio-base-header';
+import { normalizeBodyConfig, renderBody, assetsDir as bodyAssetsDir } from 'monaco-json-studio-base-body';
+import { FOOTER_TYPES, renderFooter, assetsDir as footerAssetsDir } from 'monaco-json-studio-base-footer';
 
 const moduleDir = path.dirname(fileURLToPath(import.meta.url));
 const assetsDir = path.resolve(moduleDir, '..', '..', 'assets', 'v3');
